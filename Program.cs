@@ -1,20 +1,24 @@
 ﻿using System;
 
-class Pattern
- {
-     static void Main()
+class Patern 
+{
+    static void Main()
     {
-        for (int i = 1; i <= 5; i++ )
+        Console.WriteLine("Enter number:- ");
+        int rows = Convert.ToInt32(Console.ReadLine());
+        for (int i = 1; i <= rows; i++)
         {
-            for (int j = 1; j <= i; j++)
+            for (int j = 1; j <= rows - i; j++)
             {
-                Console.Write(j + " ");
+                Console.Write(" ");
+            }
+            for (int k = 1; k <= i; k++)
+            {
+                Console.Write("*" + " ");
             }
             Console.WriteLine();
-            
         }
-
+        
     }
-
 }
 
